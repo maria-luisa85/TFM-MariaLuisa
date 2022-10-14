@@ -95,4 +95,10 @@ La tabla también muestra los valores máximos y mínimos que toman cada variabl
 <h4>Una vez realizado el análisis exploratorio y visualización de los datos se procede a la siguiente fase de preparación de los datos. Se han añadido los datos de población, densidad de población, superficie, habitantes hombres y número de habitantes mujeres.También se han creado lo que se conoce como atributo dummy o one-hot-encodding a partir de la variable ‘iso_3166_2_code’ ya que han sido necesarias para el modelado de regresión lineal múltiple y árboles de decisión para regresión. Se procede a la construcción de un nuevo dataset resultado de la unión de los conjuntos de datos descritos anteriormente y que será el utilizado para la fase de modelado. El resultado de la unión de los conjuntos de datos anteriores ha formado un dataset  con las características que se muestran en la tabla.</h4>
 <a href="https://ibb.co/m5HJRvt"><img src="https://i.ibb.co/Kx965N7/variables-finales.png" alt="variables-finales" border="0"></a></a><a target='_blank' href="https://maria-luisa-espa.imgbb.com/"></a><br />
 
+<div align ="center">
+<h2>4. Modelado de los datos</h2></div>
+
+<p>Para el modelado de los datos se prueban diferentes métodos de predicción, tanto de técnicas estadísticas como de machine learning. Comprobaremos qué técnicas son las que se ajustan más a nuestros datos y mejores resultados nos ofrecen. <br>
+<p>Para el proceso de modelado debemos dividir el dataset en dos, una parte de entrenamiento o train y otra parte para test. El set de entrenamiento nos permite entrenar el algoritmo. Este set es el que se utilizará para determinar el valor de los parámetros, nos ayuda automáticamente a encontrar los valores. El set de test o prueba nos ofrece una manera de corroborar que tanto nuestra selección de hiper parámetros, así como la de parámetros que fueron aprendidos funcionan con los nuevos datos, además de que utilizando este mismo conjunto de datos nos ayuda a tener un terreno justo para comprobar el desempeño de diversos algoritmos. El conjunto de datos lo dividiremos en 80% train y el 20% test. <br>
+
 
