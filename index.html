@@ -100,6 +100,25 @@ La tabla también muestra los valores máximos y mínimos que toman cada variabl
 
 <p>Para el modelado de los datos se prueban diferentes métodos de predicción, tanto de técnicas estadísticas como de machine learning. Comprobaremos qué técnicas son las que se ajustan más a nuestros datos y mejores resultados nos ofrecen. <br>
 <p>Para el proceso de modelado debemos dividir el dataset en dos, una parte de entrenamiento o train y otra parte para test. El set de entrenamiento nos permite entrenar el algoritmo. Este set es el que se utilizará para determinar el valor de los parámetros, nos ayuda automáticamente a encontrar los valores. El set de test o prueba nos ofrece una manera de corroborar que tanto nuestra selección de hiper parámetros, así como la de parámetros que fueron aprendidos funcionan con los nuevos datos, además de que utilizando este mismo conjunto de datos nos ayuda a tener un terreno justo para comprobar el desempeño de diversos algoritmos. El conjunto de datos lo dividiremos en 80% train y el 20% test. <br>
+  <p>Las métricas de error utilizadas para todos los modelos realizados en el modelado son: <br>
+  RMSE.<br>
+  Es una medida de ajuste que representa la raíz cuadrada de la distancia promedio entre el valor real y el error predicho. <br>
+  
+  RMSE= 1nj=1nyj- yj2
+  Indica el ajuste absoluto del modelo a los datos, es decir, cuánto de cerca están los valores observados a los valores predichos. <br>
+  A valores más bajos de RMSE mejor ajuste. <br>
+  
+  MAE.<br>
+  Es el promedio de la diferencia absoluta entre el valor real y el valor predicho.  Todas las diferencias individuales se ponderan por igual en el promedio. <br>
+  
+  MAE= 1nj=1nyj- yj
+  Cuanto mayor es el MAE peor es el ajuste. <br>
+  R2.<br>
+  Coeficiente de determinación. Es la métrica de error que indica la calidad del modelo para predecir los resultados y la proporción de variación de éstos pueden explicarse por el modelo. <br>
+  R2= j=1nyj- y2j=1nyj- y2
+  Este operador puede tomar valores entre 0 y 1. Cuanto más cerca esté de 1 mejor será el ajuste del modelo. <br>
+  Estas métricas descritas serán las utilizadas en todo el proceso de modelado para determinar la eficacia de los distintos modelos probados y ejecutados, serán el punto de referencia para la decisión del modelo que se ajusta más al objetivo de predicción de número de casos de COVID-19. <br>
+  
   <div align ="center">
 <h3>4.1. Regresión lineal múltiple</h3></div>
 <p>Empezaremos con una regresión lineal múltiple donde la variable dependiente es el número de casos, que es la variable que queremos predecir, y los atributos restantes serán las variables independientes. <br>
@@ -134,3 +153,4 @@ Ccp_alph= 0.0<br />
 
 <div align ="center">
 <h3>4.3. Métodos ensemble de Machine Learning</h3></div>
+<P>Para decidir qué técnica es la más precisa y adecuada para nuestro proyecto, calculamos el MAE (error absoluto medio) y el RMSE (error cuadrático medio) para evaluar el error en los modelos.<br>
