@@ -113,6 +113,21 @@ La tabla también muestra los valores máximos y mínimos que toman cada variabl
 
 <div align ="center">
 <h3>4.2. Árboles de decisión</h3></div>
+<p>Al igual que el modelo de regresión simple dividiremos el conjunto de datos en 80% train y el 20% test. El tipo de validación que se ha utilizado para la búsqueda de parámetros es el de validación cruzada. Este método permite evaluar la bondad de la estructura del árbol de decisión cuando se generaliza para una población mayor. Divide la muestra en número de submuestras, se generan a continuación los modelos de árbol que no incluyen cada submuestra. El primer árbol de decisión se basa en todos los casos excluyendo los de la primera submuestra, el segundo en todos los casos excepto los de la segunda submuestra y así sucesivamente. La validación cruzada genera un árbol de decisión único y final. <br />
+<p>Para la creación del modelo se utiliza ‘DescisionTreeRegressor’ del módulo de ‘sklearn.tree’. Se ajusta el árbol de regresión utilizando como variable respuesta el número de casos y como variables predictoras las demás variables disponibles. <br />
+<p>Los hiperparámetros por defecto son: <br />
+Criterion = ‘mse’<br />
+Splitter = ‘best’<br />
+Max_depth =None<br />
+Min_samples_split = 2<br />
+Min_samples_leaf = 1<br />
+Min_weight_fraction_leaf = 0.0<br />
+Max_features = None<br />
+Random_state = None<br />
+Max_leaf_nodes = None<br />
+Min_impurity_decrase = 0.0<br />
+Min_impurity_split = None<br />
+Ccp_alph= 0.0<br />
 
 
 
