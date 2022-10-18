@@ -158,7 +158,7 @@ Min_impurity_decrase = 0.0<br />
 Min_impurity_split = None<br />
 Ccp_alph= 0.0<br />
 <p>Una vez creado y entrenado el modelo representamos el árbol. Este muestra el número de observaciones y el valor medio de la variable respuesta en cada nodo. La profundidad del árbol es de 4 y el número de nodos terminales 16.<br>
-  <a href="https://ibb.co/bPfKJ2b"><img src="https://i.ibb.co/37JCzMR/image24.png" alt="image24" border="0"><a target='_blank' href="https://maria-luisa-espa.imgbb.com/"></a><br />
+  <a href="https://ibb.co/bPfKJ2b"><img src="https://i.ibb.co/VtKqmQw/image24.png" alt="image24" border="0"></a><a target='_blank' href="https://maria-luisa-espa.imgbb.com/"></a><br />
 <p>Con la finalidad de mejorar la capacidad predictiva de este modelo se procede a podar, también llamado puring. Este proceso sirve para evitar el sobreajuste y ayuda a encontrar el árbol más sencillo para conseguir mejorar el resultado de la predicción. <br>
 <p>Para la búsqueda del mejor parámetro de estimación se ha aplicado grid.best_params  lo que nos indica el estimador es la pérdida más pequeña de datos que quedan fuera. El resultado obtenido es que el mejor parámetro es 'ccp_alpha' como valor 0.00. Una vez identificado el valor óptimo se reentrena el árbol indicando este valor óptimo en los argumentos. Este proceso de puring ha identificado como mejor árbol mayor que el modelo inicialmente entrenado. La profundidad del árbol es 23 y el número de nodos terminales es 3187.<br>
 <p>Por último, evaluamos la capacidad predictiva del árbol de decisión que hemos realizado primero y el árbol de decisión que se ha realizado en el proceso de podado empleando el conjunto de entrenamiento.<br>
